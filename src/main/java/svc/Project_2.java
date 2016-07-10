@@ -9,15 +9,13 @@ package svc;
  * By considering the terms in the Fibonacci sequence whose values do not exceed four million,
  * find the sum of the even-valued terms.
  */
-public class Project_2 extends Project
+class Project_2 extends Project
 {
-    public void execute()
-    {
+    public void execute(){
         showMessage(""+findSumOfEvenTerms(createFib(1, 2))) ;
     }
 
-    private int [] createFib(int firstTerm, int secondTerm)
-    {
+    private int [] createFib(int firstTerm, int secondTerm){
         int terms [] = new int[35];
         int currentValue = secondTerm;
         int counter = 3;
@@ -34,8 +32,7 @@ public class Project_2 extends Project
         return terms;
     }
 
-    private int findSumOfEvenTerms(int [] terms)
-    {
+    private int findSumOfEvenTerms(int [] terms){
         int sum = 0;
         for(int x = 2; x < terms[0]; x+=3)
         {
