@@ -18,6 +18,8 @@ public class Call_projects {
                 return new Project_2();
             case 4:
                 return new Project_4();
+            case 6:
+                return new Project_6();
             default:
                 return new Project_default();
         }
