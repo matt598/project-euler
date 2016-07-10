@@ -8,10 +8,11 @@ public class Call_projects {
         Scanner user = new Scanner(System.in);
         System.out.println("Select which project you want to run");
         Project selectedProject = pickProject(user.nextInt());
+        selectedProject.execute();
         }
     }
 
-    private Project pickProject(int selected_project){
+    private static Project pickProject(int selected_project){
         switch (selected_project) {
             case 1:
                 return new Project_1();
