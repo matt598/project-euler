@@ -14,6 +14,8 @@ public class Call_projects {
         switch (selected_project) {
             case 1:
                 return new Project_1();
+            case 2:
+                return new Project_2();
             default:
                 return new Project_default();
         }
