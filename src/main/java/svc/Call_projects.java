@@ -9,7 +9,6 @@ public class Call_projects {
         selectedProject.execute();
     }
 
-
     private static Project pickProject(int selected_project){
         switch (selected_project) {
             case 1:
