@@ -14,6 +14,7 @@ class Project_1 extends Project{
         add(3,1000);
         add(5,1000);
         remove(15,1000);
+        remove(15,1000);
         showMessage("" + sum) ;
     }
 
